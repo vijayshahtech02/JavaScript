@@ -1,30 +1,56 @@
-function sayMyname() {
-    console.log("vijay")
+function SayMyName() {
+    console.log("Vijay shah")
 }
-// sayMyname()
+// SayMyName();
 
-function addTwoNumber(number1, number2) {
-   let sum = number1 + number2;
-   return sum;
+
+function AddTwoNumbers(number1, number2) {
+      console.log(number1 + number2);
+      
+}
+// AddTwoNumbers(10,4);
+
+function AddTwoNumbers(number1, number2) {
+      return number1 + number2;
+
+      
 }
 
-let result = addTwoNumber(2,3)
+result = AddTwoNumbers(10,4);
+// console.log(result);
+
+function AddTwoNumbers(number1, number2) {
+      let sum = number1 + number2;
+      return sum;
+
+      
+}
+
+result = AddTwoNumbers(10,4);
 // console.log(result);
 
 
-function sub(num1, num2) {
-    return num1 - num2;
+function UserLoggedIn(user) {
+     if(user === undefined) {
+        console.log("please enter the username: ");
+        return
+     }
+    
+    return `${user} user just logged in`;
 }
-let finalValue = sub(10, 3);
-// console.log(finalValue);
 
 
-function LoggedIn(username) {
-    if(username === undefined){
-       console.log("please enter ther username");
-       return;
+console.log(UserLoggedIn());
+
+
+
+function demo(x) {
+    if(x < 10) {
+        console.log("x is less than 10");
+        return;  // function turant exit
     }
-    return `${username} is just Logged in`;
+    console.log("This will only run if x >= 10");
 }
 
-console.log(LoggedIn("Raju"));
+demo(5);
+demo(15);
