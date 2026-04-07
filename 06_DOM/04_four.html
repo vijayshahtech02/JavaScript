@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <ul class="Language">
+        <li>Javascript</li>
+    </ul>
+    
+</body>
+<script>
+
+  function addLanguage(langName) {
+      const li = document.createElement('li')
+      li.innerHTML = `${langName}`
+      document.querySelector('.Language').append(li)
+      
+
+  }
+  addLanguage("python")
+
+
+
+  function optiLang(langName) {
+
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode(langName))
+    document.querySelector('.Language').appendChild(li)
+    
+  }
+  optiLang("PHP")
+
+
+//edit 
+const secondLang = document.querySelector('li:nth-child(2)')
+// secondLang.innerHTML = "java"
+const newli = document.createElement('li')
+const addText = document.createTextNode("java")
+newli.appendChild(addText)
+secondLang.replaceWith(newli)
+
+//edit
+const firstLang = document.querySelector('li:nth-child(1)')
+const Newli = document.createElement('li')
+Newli.appendChild(document.createTextNode('Typescript'))
+firstLang.replaceWith(Newli)
+
+
+
+
+</script>
+</html>

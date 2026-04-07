@@ -44,7 +44,7 @@ const myNum = [1,2,3,4,5,6,7,8,9,10];
 //
 
 const books = [
-    {title: 'Book one', genre:"fiction", publish: 1981, edition: 2004},
+    {title: 'Book one', genre:"Javascript", publish: 1981, edition: 2004},
     {title: 'Book two', genre:"marathi", publish: 1995, edition: 1903},
     {title: 'Book three', genre:"English", publish: 1990, edition: 2005},
     {title: 'Book four', genre:"Java", publish: 1914, edition: 1900},
