@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  gap: 10px; /* space between boxes */
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  height: 100vh;   
+           
+}
+
+.button {
+  width: 60px;
+  height: 60px;
+  border: 2px solid black;
+}
+
+#pink {
+    background-color: pink;
+}
+#red {
+    background-color: red;
+}
+#yellow {
+    background-color: yellow;
+}
+#blue {
+    background-color: blue;
+}
+#green {
+    background-color: green;
+}
+
