@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dark{
+            background-color: black;
+            color: white;
+        }
+        .light {
+            background-color: white; 
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <button>Click me</button>
+    <p>Welcome to my Webiste </p>
+    
+</body>
+<script>
+
+    const button = document.querySelector('button');
+    const body = document.querySelector("body")
+
+
+    let currmode = "light"
+    button.addEventListener('click', function() {
+        
+            // let currmode = "light" //reset ho jaata he 
+
+
+        if(currmode === "light") {
+            currmode = "dark"
+            body.classList.remove("light")
+            body.classList.add("dark")
+            
+        }
+        else  {
+            currmode = "light"
+            body.classList.remove("dark")
+            body.classList.add("light")
+            
+
+        }
+       
+    //   console.log(currmode)
+    })
+</script>
+</html>
